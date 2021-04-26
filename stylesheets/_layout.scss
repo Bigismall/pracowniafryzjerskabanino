@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+body {
+    padding-top:$navbar-height;
+    height: 100%;
+    overflow: auto;
+
+}
+.layout-container {
+    height: 100%;
+}
+
+.layout-row {
+    height: 100%;
+    /*    overflow: auto;*/
+}
+
+
+.background-poster {
+    @media (max-width: $screen-sm-max) {
+
+        height: 500px;
+    }
+    @media (min-width: $screen-md-min)  {
+        height: 100%;
+    }
+
+    background: #333333 url(../images/background_1.jpg)  no-repeat center center;
+    background-size:cover;
+    position: fixed;
+}
+
+
+.content {
+    @media (max-width: $screen-sm-max) {
+        padding-top: 500px;
+    }
+    section {
+        padding: 20px 40px 20px 40px;
+        @media (max-width: $screen-sm-max) {
+            padding: 20px 20px 20px 20px;
+        }
+
+        text-shadow: 0px 0px 1px $gray-light;
+    }
+}
+
+
+
+#omnie {
+    background-color: #fff;
+}
+
+#cennik {
+    background-color: #E8E0D5;
+    color: #534238;
+}
+#salon {
+    background-color: #fff;
+}
+#kontakt {
+    background-color: #6E9EA4;
+    color: #fff;
+    a {
+        color: #E7BD98;
+    }
+    .row {
+        padding-top: 20px;
+    }
+    h2 {
+        margin-top: 0px;
+    }
+}
+
+#mapa {
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height: 500px;
+}
+
+.prices {
+    td:nth-child(1) {
+
+    }
+    td:nth-child(2) {
+        @extend .text-right;
+    }
+}
+address {
+    font-size: $font-size-h3;
+}
+.contact-phone {
+    font-size: $font-size-h1;
+}
+/*
+#222C4C
+#273461
+#6E9EA4
+#534238
+#7E634E
+#E8E0D5
+#FFFFFF
+#110A04
+#D1803B
+#E7BD98
+#3296A9
+*/
